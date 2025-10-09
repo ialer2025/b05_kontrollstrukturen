@@ -2,7 +2,10 @@
 // g_geschachteltes_if
 // 09.10.2025
 
-public class ABCAnalyse
+//----------------SCHLECHTER CODE---------------------------
+// so sollen wir das nicht machen
+
+public class ABCAnalyse1
 {
 	public static void main(String[]args)
 	{
@@ -18,18 +21,14 @@ public class ABCAnalyse
 			{
 				System.out.println("Mittel");
 			}
-			else
-			{
-				if(prioritaet == 'C')
-				{
-					System.out.println("Niedrig");
-				}
-				else
-				{
-					System.out.println("Unzulaessig");
-				}
-			}
 		}
+		else
+		{
+			System.out.println("Niedrieg");
+		}
+		// Compiliert nicht!!!
+		// Fehler: "else" ohne "if"
+		// error: 'else' without 'if'
 	}
 }
 		
